@@ -1,4 +1,0 @@
-1. What licenses are already in my software?
-2. What are the terms of service where my software is hosted?
-3. Do I want derivatives, additions and distributions to use the same licenses?
-4. Can others use my software in their own proprietary software?
