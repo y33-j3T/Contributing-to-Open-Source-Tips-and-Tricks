@@ -8,6 +8,7 @@
 
 ## Git
 // create a new directory, and initialize it with git-specific functions
+
 git init <repository-name>
 git init my-repo
 
