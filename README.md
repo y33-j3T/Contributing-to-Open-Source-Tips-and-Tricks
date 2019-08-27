@@ -1,10 +1,12 @@
-# Contributing to Open Source: Tips & Tricks (work in progress)
+# Contributing to Open Source: Tips & Tricks 
 
-## License
-1. What licenses are already in my software?
-2. What are the terms of service where my software is hosted?
-3. Do I want derivatives, additions and distributions to use the same licenses?
-4. Can others use my software in their own proprietary software?
+## Contents
+- [Introduction](#Introduction)
+- [Contributing](#Contributing)
+- [License](#License)
+
+## Introduction
+As I learn my way up to being a proficient contributor to open source, I have kept some of these cheatsheets/resources around to refer in times of need. This list cover mostly the basics and would suffice foundational day-to-day work. I hope you find it useful. Feel free to contribute via issues or pull requests. :heart_eyes:
 
 ## Git
 // create a new directory, and initialize it with git-specific functions
@@ -177,7 +179,17 @@ git rm -r --cached <folder> (If you want to remove a whole folder, you need to r
 git remote prune <remote-name>
 ```
 
-## Issue 
+## Writing READMEs
+
+## Writing CONTRIBUTEs
+
+## Choosing a License
+1. What licenses are already in my software?
+2. What are the terms of service where my software is hosted?
+3. Do I want derivatives, additions and distributions to use the same licenses?
+4. Can others use my software in their own proprietary software?
+
+## Documenting Issues
 - Initiator (who logged the call)
 - Initiator Extension or Phone 
 - Date/Time Opened
