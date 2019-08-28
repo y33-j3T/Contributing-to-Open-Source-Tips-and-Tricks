@@ -203,7 +203,11 @@ git remote prune <remote-name>
 - Completion Date
 - Resolution, development request # or link to vendor support request
 
+## Contributing
+- Please refer to [CONTRIBUTE.md](./CONTRIBUTE.md) for details. :heart_eyes:
 
+## License
+Contributing to Open Source: Tips & Tricks is released under the [MIT license](./LICENSE).
 
 
 
