@@ -178,6 +178,7 @@ git rm -r --cached <folder> (If you want to remove a whole folder, you need to r
 ```
 git remote prune <remote-name>
 ```
+## Git FAQ
 
 ## Writing READMEs
 
