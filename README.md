@@ -9,7 +9,17 @@
 As I learn my way up to being a proficient contributor to open source, I have kept some of these cheatsheets/resources around to refer in times of need. This list cover mostly the basics and would suffice foundational day-to-day work. I hope you find it useful. Feel free to contribute via issues or pull requests. :heart_eyes:
 
 ## Git
-// create a new directory, and initialize it with git-specific functions
+### Setup
+```
+git config --global user.name "[name]"
+```
+
+```
+git config --global user.email "[email address]"
+```
+
+### Init
+#### create a new directory, and initialize it with git-specific functions
 ```
 git init <repository-name>
 git init my-repo
@@ -53,11 +63,11 @@ git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
 
 // after commit, push to remote repo aka origin, and commit to master
 ```
-git push <remote-name> <remote-branch-name>
+git push [remote-name] [remote-branch-name]
 git push origin master
 ```
 
-### branching 
+### Branch
 
 // create new local branch
 ```
@@ -133,7 +143,7 @@ git checkout master
 git merge better_branch             # fast-forward master up to the merge
 ```
 
-### remote 
+### Remote
 
 // list remote files
 ```
