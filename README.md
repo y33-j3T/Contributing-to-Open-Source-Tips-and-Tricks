@@ -25,24 +25,24 @@ git init <repository-name>
 git init my-repo
 ```
   
-// change into the `my-repo` directory
+###### change into the `my-repo` directory
 ```
 cd my-repo
 ```
 
-// create files in the project directory
+###### create files in the project directory
 ```
 touch README.md
 touch .gitignore 
 ```
 
-// type file types to ignore in gitignore file eg
+###### type file types to ignore in gitignore file eg
 ```
 *.log
 *.txt
 ```
 
-// stage files
+###### stage files
 ```
 git add README.md
 git add *
@@ -50,18 +50,18 @@ git add *.html
 git add *.txt 
 ```
 
-// take a snapshot of the staging area
+###### take a snapshot of the staging area
 ```
 git commit -m 'message'
 ```
 
-// provide the path for the repository you created on github
+###### provide the path for the repository you created on github
 ```
 git remote add <remote-name> <github-link>
 git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
 ```
 
-// after commit, push to remote repo aka origin, and commit to master
+###### after commit, push to remote repo aka origin, and commit to master
 ```
 git push [remote-name] [remote-branch-name]
 git push origin master
@@ -69,73 +69,73 @@ git push origin master
 
 ### Branch
 
-// create new local branch
+###### create new local branch
 ```
 git branch <local-branch-name>
 ```
 
-// create new local branch from remote branch
+###### create new local branch from remote branch
 ```
 git branch <local-branch-name> <remote-name>/<remote-branch-name>
 git checkout -b <local-branch-name> <remote-name>/<remote-branch-name> (this allows you to set local-branch-name on your own)
 git checkout --track <remote-name>/<remote-branch-name> (this sets the local-branch-name as remote-branch-name)
 ```
 
-// go to branch (if main branch, local-branch-name=master)
+###### go to branch (if main branch, local-branch-name=master)
 ```
 git checkout <local-branch-name>
 ```
 
-// merge branches to source branch (must be on source branch)
+###### merge branches to source branch (must be on source branch)
 ```
 git merge <branch-name>
 ```
 
-// use -a to skip staging step while commit, but untracked files must use 'git add'
+###### use -a to skip staging step while commit, but untracked files must use 'git add'
 ```
 git commit -a -m 'message'
 ```
 
-// stash unstaged stuff somewhere and come back later
+###### stash unstaged stuff somewhere and come back later
 ```
 git stash
 ```
 
-// apply stashed items
+###### apply stashed items
 ```
 git stash apply 
 ```
 
-// list all remote branches
+###### list all remote branches
 ```
 git branch -r
 ```
 
-// create new remote branch / update remote branch from local branch
+###### create new remote branch / update remote branch from local branch
 ```
 git push <remote-name> <local-branch-name>:<remote-branch-name>
 ```
 
-// set branch upstream (ie. set the remote branch where the local branch push/pull directly)
+###### set branch upstream (ie. set the remote branch where the local branch push/pull directly)
 ```
 git branch -u <remote-name>/<remote-branch-name>
 git branch --set-upstream-to <remote-name>/<remote-branch-name>
 ```
 
-// see branch (increasing verbosity)
+###### see branch (increasing verbosity)
 ```
 git branch (view local branch name only)
 git branch -v (shows latest commit)
 git branch -vv (shows upstream branch)
 ```
 
-// delete remote branch
+###### delete remote branch
 ```
 git push <remote-name> :<remote-branch-name>
 git push <remote-name> --delete <remote-branch-name>
 ```
 
-// make a branch to be master 
+###### make a branch to be master 
 ```
 git checkout better_branch
 git merge --strategy=ours master    # keep the content of this branch, but record a merge
@@ -145,49 +145,50 @@ git merge better_branch             # fast-forward master up to the merge
 
 ### Remote
 
-// list remote files
+###### list remote files
 ```
 git remote
 ```
 
-// clone remote repository
+###### clone remote repository
 ```
 git clone <clone-url>
 ```
 
-// go out to any server and get any latest changes
+###### go out to any server and get any latest changes
 ```
 git fetch <remote-name>
 git fetch --all
 ```
 
-// fetch and merge the changes from the remote branch into current branch
+###### fetch and merge the changes from the remote branch into current branch
 ```
 git pull <remote-name>
 ```
 
-// add remote repository
+###### add remote repository
 ```
 git remote add <remote-name> <github-link>
 git remote add myRepo http://github.com/somerepo.git
 ```
 
-// show remote links
+###### show remote links
 ```
 git remote -v
 ```
 
-// stop tracking a file that is currently tracked
+###### stop tracking a file that is currently tracked
 ```
 git rm --cached <filename>
 git rm -r --cached <folder> (If you want to remove a whole folder, you need to remove all files in it recursively.)
 # How to make Git “forget” about a file that was tracked but is now in .gitignore?
 ```
 
-// clear local pointers to non-existing remote branches
+###### clear local pointers to non-existing remote branches
 ```
 git remote prune <remote-name>
 ```
+
 ## Git FAQ
 
 ## Writing READMEs
