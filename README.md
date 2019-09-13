@@ -26,64 +26,72 @@ git config --global user.email "[email address]"
 ### Init
 ###### Create a new directory, and initialize it with git-specific functions
 ```
-git init <repository-name>
-git init my-repo
+git init [repository-name]
+# git init my-repo
 ```
   
-###### Change into the `my-repo` directory
+###### Change into directory of specified repository
 ```
-cd my-repo
+cd [repository-name]
+# cd my-repo
 ```
 
 ###### Create files in the project directory
 ```
-touch README.md
-touch .gitignore 
+touch [filename]
+# touch README.md
+# touch .gitignore 
 ```
 
-###### Type file types to ignore in gitignore file eg
+###### Specify files to ignore / avoid being tracked by git in .gitignore text file
 ```
-*.log
-*.txt
+[filename]
+# app.py
+# reference.txt
+# *.log          # * indicates a wildcard
+# *.txt
 ```
 
 ###### Stage files
 ```
-git add README.md
-git add *
-git add *.html
-git add *.txt 
+git add [filename]
+# git add README.md
+# git add .          # . indicates all files (except the ones specified in .gitignore)
+# git add *          # * indicates a wildcard
+# git add *.html
+# git add *.txt 
 ```
 
 ###### Take a snapshot of the staging area
 ```
-git commit -m 'message'
+git commit -m [message]
+# git commit -m "added a button"
 ```
 
 ###### Provide the path for the repository you created on github
 ```
-git remote add <remote-name> <github-link>
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+git remote add [remote-name] [github-link]
+# git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
 ```
 
 ###### After commit, push to remote repo aka origin, and commit to master
 ```
 git push [remote-name] [remote-branch-name]
-git push origin master
+# git push origin master
 ```
 
 ### Branch
 
 ###### Create new local branch
 ```
-git branch <local-branch-name>
+git branch [local-branch-name]
 ```
 
 ###### Create new local branch from remote branch
 ```
-git branch <local-branch-name> <remote-name>/<remote-branch-name>
-git checkout -b <local-branch-name> <remote-name>/<remote-branch-name> (this allows you to set local-branch-name on your own)
-git checkout --track <remote-name>/<remote-branch-name> (this sets the local-branch-name as remote-branch-name)
+git branch [local-branch-name] [remote-name]/[remote-branch-name]
+git checkout -b [local-branch-name] [remote-name]/[remote-branch-name] (this allows you to set local-branch-name on your own)
+git checkout --track [remote-name]/[remote-branch-name] (this sets the local-branch-name as remote-branch-name)
 ```
 
 ###### Go to branch (if main branch, local-branch-name=master)
@@ -136,8 +144,8 @@ git branch -vv (shows upstream branch)
 
 ###### Delete remote branch
 ```
-git push <remote-name> :<remote-branch-name>
-git push <remote-name> --delete <remote-branch-name>
+git push [remote-name] :[remote-branch-name]
+git push [remote-name] --delete [remote-branch-name]
 ```
 
 ###### Make a branch to be master 
