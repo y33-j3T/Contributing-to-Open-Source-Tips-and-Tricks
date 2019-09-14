@@ -16,36 +16,36 @@ As I learn my way up to being a proficient contributor to open source, I have ke
 ## Git
 ### Setup
 ```
-git config --global user.name "[name]"
+git config --global user.name "<name>"
 ```
 
 ```
-git config --global user.email "[email address]"
+git config --global user.email "<email address>"
 ```
 
 ### Init
 ###### Create a new directory, and initialize it with git-specific functions
 ```
-git init [repository-name]
+git init <repository-name>
 # git init my-repo
 ```
   
 ###### Change into directory of specified repository
 ```
-cd [repository-name]
+cd <repository-name>
 # cd my-repo
 ```
 
 ###### Create files in the project directory
 ```
-touch [filename]
+touch <filename>
 # touch README.md
 # touch .gitignore 
 ```
 
 ###### Specify files to ignore / avoid being tracked by git in .gitignore text file
 ```
-[filename]
+<filename>
 # app.py
 # reference.txt
 # *.log          # * indicates a wildcard
@@ -54,7 +54,7 @@ touch [filename]
 
 ###### Stage files
 ```
-git add [filename]
+git add <filename>
 # git add README.md
 # git add .          # . indicates all files (except the ones specified in .gitignore)
 # git add *          # * indicates a wildcard
@@ -64,19 +64,19 @@ git add [filename]
 
 ###### Take a snapshot of the staging area
 ```
-git commit -m [message]
+git commit -m <message>
 # git commit -m "added a button"
 ```
 
 ###### Provide the path for the repository you created on github
 ```
-git remote add [remote-name] [github-link]
+git remote add <remote-name> <github-link>
 # git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
 ```
 
 ###### After commit, push to remote repo aka origin, and commit to master
 ```
-git push [remote-name] [remote-branch-name]
+git push <remote-name> <remote-branch-name>
 # git push origin master
 ```
 
@@ -84,14 +84,14 @@ git push [remote-name] [remote-branch-name]
 
 ###### Create new local branch
 ```
-git branch [local-branch-name]
+git branch <local-branch-name>
 ```
 
 ###### Create new local branch from remote branch
 ```
-git branch [local-branch-name] [remote-name]/[remote-branch-name]
-git checkout -b [local-branch-name] [remote-name]/[remote-branch-name] (this allows you to set local-branch-name on your own)
-git checkout --track [remote-name]/[remote-branch-name] (this sets the local-branch-name as remote-branch-name)
+git branch <local-branch-name> <remote-name>/<remote-branch-name>
+git checkout -b <local-branch-name> <remote-name>/<remote-branch-name>    # this allows you to set local-branch-name on your own)
+git checkout --track <remote-name>/<remote-branch-name>                   # this sets the local-branch-name as remote-branch-name)
 ```
 
 ###### Go to branch (if main branch, local-branch-name=master)
@@ -191,10 +191,10 @@ git remote -v
 ```
 
 ###### Stop tracking a file that is currently tracked
+[1]:#Stop-tracking-a-file-that-is-currently-tracked
 ```
 git rm --cached <filename>
-git rm -r --cached <folder> (If you want to remove a whole folder, you need to remove all files in it recursively.)
-# How to make Git “forget” about a file that was tracked but is now in .gitignore?
+git rm -r --cached <folder>    # if you want to remove a whole folder, you need to remove all files in it recursively
 ```
 
 ###### Clear local pointers to non-existing remote branches
@@ -203,6 +203,7 @@ git remote prune <remote-name>
 ```
 
 ## Git FAQ
+- [How to make Git “forget” about a file that was tracked but is now in .gitignore?][1]
 
 ## Writing READMEs
 
