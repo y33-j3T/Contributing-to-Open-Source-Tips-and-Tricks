@@ -84,7 +84,8 @@ git push <remote-name> <remote-branch-name>
 
 ###### Create new local branch
 ```
-git branch <local-branch-name>
+git branch <local-branch-name>          # create a local branch
+git checkout -b <local-branch-name>     # create a local branch and checkout to that branch
 ```
 
 ###### Create new local branch from remote branch
