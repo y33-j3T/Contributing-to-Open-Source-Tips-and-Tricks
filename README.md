@@ -91,8 +91,8 @@ git checkout -b <local-branch-name>     # create a local branch and checkout to 
 ###### Create new local branch from remote branch
 ```
 git branch <local-branch-name> <remote-name>/<remote-branch-name>
-git checkout -b <local-branch-name> <remote-name>/<remote-branch-name>    # this allows you to set local-branch-name on your own)
-git checkout --track <remote-name>/<remote-branch-name>                   # this sets the local-branch-name as remote-branch-name)
+git checkout -b <local-branch-name> <remote-name>/<remote-branch-name>    # this allows you to set local-branch-name on your own
+git checkout --track <remote-name>/<remote-branch-name>                   # this sets the local-branch-name as remote-branch-name
 ```
 
 ###### Go to branch
