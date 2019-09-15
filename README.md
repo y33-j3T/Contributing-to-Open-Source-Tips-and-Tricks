@@ -216,12 +216,12 @@ git remote prune <remote-name>
 - [How to make Git “forget” about a file that was tracked but is now in .gitignore?][1]
 
 ## Writing READMEs
-- A list of well written READMEs compiled by @matiassingers [see](https://github.com/matiassingers/awesome-readme)
-- Full list of GitHub emojis [[see]](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
-- A template to make a good README [[see]](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-- Adding badges [[see]](https://shields.io/)
-- Octocat images [[see]](https://octodex.github.com/)
-- Embedding LaTeX mathematical symbols [[see]](https://www.codecogs.com/latex/eqneditor.php)
+- List of well written READMEs [[see]](https://github.com/matiassingers/awesome-readme)
+- GitHub Emojis [[see]](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
+- Template to make a good README [[see]](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
+- Badges [[see]](https://shields.io/)
+- Octodex [[see]](https://octodex.github.com/)
+- LaTeX mathematical symbol embedding [[see]](https://www.codecogs.com/latex/eqneditor.php)
 
 ## Writing CONTRIBUTEs
 
