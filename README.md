@@ -95,9 +95,10 @@ git checkout -b <local-branch-name> <remote-name>/<remote-branch-name>    # this
 git checkout --track <remote-name>/<remote-branch-name>                   # this sets the local-branch-name as remote-branch-name)
 ```
 
-###### Go to branch (if main branch, local-branch-name=master)
+###### Go to branch
 ```
 git checkout <local-branch-name>
+# git checkout master          # go to master branch
 ```
 
 ###### Merge branches to source branch (must be on source branch)
@@ -155,6 +156,14 @@ git checkout better_branch
 git merge --strategy=ours master    # keep the content of this branch, but record a merge
 git checkout master
 git merge better_branch             # fast-forward master up to the merge
+```
+
+###### Rename branch 
+```
+git checkout <old_name>                # go to branch to rename
+git branch -m <new_name>               # rename the branch
+git push origin --delete <old_name>    # delete the <old_name> remote branch
+git push origin -u <new_name>          # push the <new_name> local branch & reset the upstream branch
 ```
 
 ### Remote
