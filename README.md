@@ -213,7 +213,7 @@ git remote prune <remote-name>
 ```
 
 ## Git FAQ
-- [How to make Git “forget” about a file that was tracked but is now in .gitignore?][1]
+- How to make Git “forget” about a file that was tracked but is now in .gitignore? [See][1]
 
 ## Writing READMEs
 
