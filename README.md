@@ -217,18 +217,18 @@ git remote prune <remote-name>
 
 ## Writing READMEs
 - A list of well written READMEs compiled by @matiassingers [see](https://github.com/matiassingers/awesome-readme)
-- Full list of GitHub emojis [see](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
-- A template to make a good README [see](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-- Adding badges [see](https://shields.io/)
-- Octocat images [see](https://octodex.github.com/)
-- Embedding LaTeX mathematical symbols [see](https://www.codecogs.com/latex/eqneditor.php)
+- Full list of GitHub emojis [[see]](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
+- A template to make a good README [[see]](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
+- Adding badges [[see]](https://shields.io/)
+- Octocat images [[see]](https://octodex.github.com/)
+- Embedding LaTeX mathematical symbols [[see]](https://www.codecogs.com/latex/eqneditor.php)
 
 ## Writing CONTRIBUTEs
 
 ## Choosing a License
-- Explain a license in plain english [see](https://tldrlegal.com/)
-- Full guide to choosing a license [see](https://choosealicense.com/)
-- Further license references for open source [see](https://opensource.org/licenses)
+- Explain a license in plain english [[see]](https://tldrlegal.com/)
+- Full guide to choosing a license [[see]](https://choosealicense.com/)
+- Further license references for open source [[see]](https://opensource.org/licenses)
 - Questions to ask yourself:
   1. What licenses are already in my software?
   2. What are the terms of service where my software is hosted?
