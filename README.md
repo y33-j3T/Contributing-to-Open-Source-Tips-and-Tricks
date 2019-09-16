@@ -101,9 +101,10 @@ git checkout <local-branch-name>
 # git checkout master          # go to master branch
 ```
 
-###### Merge branches to source branch (must be on source branch)
+###### Merge branches to source branch 
 ```
-git merge <branch-name>
+git merge <branch-name>                # merge specified branch to current branch
+# git merge some-other-branch master   # merge some-other-branch to master 
 ```
 
 ###### Use -a to skip staging step while commit, but untracked files must use 'git add'
