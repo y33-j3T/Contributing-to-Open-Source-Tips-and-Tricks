@@ -29,7 +29,12 @@ git config --global user.email "<email address>"
 git init <repository-name>
 # git init my-repo
 ```
-  
+
+###### Download a project and its entire version history
+```
+git clone [url]
+```
+
 ###### Change into directory of specified repository
 ```
 cd <repository-name>
@@ -50,6 +55,12 @@ touch <filename>
 # reference.txt
 # *.log          # * indicates a wildcard
 # *.txt
+# build/
+```
+
+###### List all ignored files in this project
+```
+git ls-files --other --ignored --exclude-standard
 ```
 
 ###### Stage files
@@ -64,8 +75,13 @@ git add <filename>
 
 ###### Take a snapshot of the staging area
 ```
-git commit -m <message>
+git commit -m <descriptive-message>
 # git commit -m "added a button"
+```
+
+###### Unstage the file, but preserve its contents
+```
+git reset [filename]
 ```
 
 ###### Provide the path for the repository you created on github
@@ -80,7 +96,30 @@ git push <remote-name> <remote-branch-name>
 # git push origin master
 ```
 
+### Check repository status
+
+###### Lists all new or modified files to be committed
+```
+git status
+```
+
+###### Show file differences not yet staged
+```
+git diff
+```
+
+###### Show file differences between staging and the last file version
+```
+git diff --staged
+```
+
+
 ### Branch
+
+###### List all local branches in the current repository
+```
+git branch
+```
 
 ###### Create new local branch
 ```
@@ -151,6 +190,11 @@ git push [remote-name] :[remote-branch-name]
 git push [remote-name] --delete [remote-branch-name]
 ```
 
+###### Delete local branch
+```
+git branch -d [local-branch-name]
+```
+
 ###### Make a branch to be master 
 ```
 git checkout better_branch
@@ -201,6 +245,40 @@ git remote add myRepo http://github.com/somerepo.git
 git remote -v
 ```
 
+###### Clear local pointers to non-existing remote branches
+```
+git remote prune <remote-name>
+```
+
+### Stash changes
+
+Temporarily store all modified tracked files
+```
+git stash
+```
+
+###### List all stashed changesets
+```
+git stash list
+```
+
+###### Restore the most recently stashed files
+```
+git stash pop
+```
+
+###### Discard the most recently stashed changeset
+```
+git stash drop
+```
+
+### Refactor files
+
+###### Delete the file from the working directory and stages the deletion
+```
+git rm [file]
+```
+
 ###### Stop tracking a file that is currently tracked
 [1]:#Stop-tracking-a-file-that-is-currently-tracked
 ```
@@ -208,9 +286,32 @@ git rm --cached <filename>
 git rm -r --cached <folder>    # if you want to remove a whole folder, you need to remove all files in it recursively
 ```
 
-###### Clear local pointers to non-existing remote branches
+###### Change the file name and prepare it for commit
 ```
-git remote prune <remote-name>
+git mv [file-original] [file-renamed]
+```
+
+### Review history
+Browse and inspect the evolution of project files
+
+###### List version history for the current branch
+```
+git log
+```
+
+###### List version history for a file, including renames
+```
+git log --follow [file]
+```
+
+###### Show content differences between two branches
+```
+git diff [first-branch]...[second-branch]
+```
+
+###### Output metadata and content changes of the specified commit
+```
+git show [commit]
 ```
 
 ## Git FAQ
