@@ -14,11 +14,15 @@
 As I learn my way up to being a proficient contributor to open source, I have kept some of these cheatsheets/resources around to refer in times of need. This list cover mostly the basics and would suffice foundational day-to-day work. I hope you find it useful. Feel free to contribute via issues or pull requests. :heart_eyes:
 
 ## Git
+
 ### Setup
+
+###### Set the name you want attached to your commit transactions
 ```
 git config --global user.name "<name>"
 ```
 
+###### Set the email you want attached to your commit transactions
 ```
 git config --global user.email "<email address>"
 ```
@@ -151,16 +155,6 @@ git merge <branch-name>                # merge specified branch to current branc
 git commit -a -m 'message'
 ```
 
-###### Stash unstaged stuff somewhere and come back later
-```
-git stash
-```
-
-###### Apply stashed items
-```
-git stash apply 
-```
-
 ###### List all remote branches
 ```
 git branch -r
@@ -252,7 +246,7 @@ git remote prune <remote-name>
 
 ### Stash changes
 
-Temporarily store all modified tracked files
+###### Stash unstaged stuff somewhere and come back later
 ```
 git stash
 ```
@@ -260,6 +254,11 @@ git stash
 ###### List all stashed changesets
 ```
 git stash list
+```
+
+###### Apply stashed items
+```
+git stash apply 
 ```
 
 ###### Restore the most recently stashed files
@@ -270,6 +269,18 @@ git stash pop
 ###### Discard the most recently stashed changeset
 ```
 git stash drop
+```
+
+### Redo commits
+
+###### Undo all commits after [commit], preserving changes locally
+```
+git reset [commit]
+```
+
+###### Discard all history and changes back to the specified commit
+```
+git reset --hard [commit]
 ```
 
 ### Refactor files
