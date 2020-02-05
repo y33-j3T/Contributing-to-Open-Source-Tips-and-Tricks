@@ -16,6 +16,8 @@ As I learn my way up to being a proficient contributor to open source, I have ke
 ## Git
 
 ### Setup
+<details>
+<summary>Details</summary>
 
 ###### Set the name you want attached to your commit transactions
 ```
@@ -31,8 +33,12 @@ git config --global user.email "<email address>"
 git config --global http.proxy <proxy address>
 ```
 
-### Init
+</details>
 
+### Init
+<details>
+<summary>Details</summary>
+  
 ###### Create a new directory, and initialize it with git-specific functions
 ```
 git init <repository-name>
@@ -112,8 +118,12 @@ git push <remote-name> <remote-branch-name>
 # git push origin master
 ```
 
-### Check repository status
+</details>
 
+### Check repository status
+<details>
+<summary>Details</summary>
+  
 ###### Lists all new or modified files to be committed
 ```
 git status
@@ -129,9 +139,12 @@ git diff
 git diff --staged
 ```
 
+</details>
 
 ### Branch
-
+<details>
+<summary>Details</summary>
+  
 ###### List all local branches in the current repository
 ```
 git branch
@@ -217,8 +230,12 @@ git push origin --delete <old_name>    # delete the <old_name> remote branch
 git push origin -u <new_name>          # push the <new_name> local branch & reset the upstream branch
 ```
 
-### Remote
+</details>
 
+### Remote
+<details>
+<summary>Details</summary>
+  
 ###### List remote files
 ```
 git remote
@@ -285,8 +302,13 @@ git fetch --all                                       # fetch from multiple remo
 git checkout <branch-name>                            # checkout to the branch you want to work with
 git reset --hard <remote-name>/<branch-name>          # switch remotes to access the work done on each one & further work
 ```
-### Stash changes
 
+</details>
+
+### Stash changes
+<details>
+<summary>Details</summary>
+  
 ###### Stash unstaged stuff somewhere and come back later
 ```
 git stash
@@ -312,8 +334,12 @@ git stash pop
 git stash drop
 ```
 
-### Redo commits
+</details>
 
+### Redo commits
+<details>
+<summary>Details</summary>
+  
 ###### Undo all commits after [commit], preserving changes locally
 ```
 git reset [commit]
@@ -324,8 +350,12 @@ git reset [commit]
 git reset --hard [commit]
 ```
 
-### Refactor files
+</details>
 
+### Refactor files
+<details>
+<summary>Details</summary>
+  
 ###### Delete the file from the working directory and stages the deletion
 ```
 git rm [file]
@@ -343,9 +373,13 @@ git rm -r --cached <folder>    # if you want to remove a whole folder, you need 
 git mv [file-original] [file-renamed]
 ```
 
+</details>
+
 ### Review history
 Browse and inspect the evolution of project files
-
+<details>
+<summary>Details</summary>
+  
 ###### List version history for the current branch
 ```
 git log
@@ -377,6 +411,8 @@ git checkout <current-branch>          # To fix detached head
 ```
 git checkout <commit-hash>
 ```
+
+</details>
 
 ## Git FAQ
 - [How to make Git “forget” about a file that was tracked but is now in .gitignore?][1]
@@ -420,9 +456,3 @@ git checkout <commit-hash>
 
 ## License
 Contributing to Open Source: Tips & Tricks is released under the [MIT license](./LICENSE).
-
-
-
-
-
-
