@@ -342,12 +342,12 @@ git stash drop
   
 ###### Undo all commits after [commit], preserving changes locally
 ```
-git reset [commit]
+git reset <commit-hash>
 ```
 
 ###### Discard all history and changes back to the specified commit
 ```
-git reset --hard [commit]
+git reset --hard <commit-hash>
 ```
 
 </details>
