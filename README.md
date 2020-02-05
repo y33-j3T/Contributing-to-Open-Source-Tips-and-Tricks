@@ -26,8 +26,13 @@ git config --global user.name "<name>"
 ```
 git config --global user.email "<email address>"
 ```
+###### Should you need it, you may configure a proxy to connect with remotes
+```
+git config --global http.proxy <proxy address>
+```
 
 ### Init
+
 ###### Create a new directory, and initialize it with git-specific functions
 ```
 git init <repository-name>
@@ -60,6 +65,13 @@ touch <filename>
 # *.log          # * indicates a wildcard
 # *.txt
 # build/
+```
+
+###### Write contents into text files
+```
+echo <filename-to-write>><filename>
+# echo *.log>.gitignore          # rewrite the file
+# echo *.log>>.gitignore         # append to the file
 ```
 
 ###### List all ignored files in this project
@@ -228,15 +240,31 @@ git fetch --all
 git pull <remote-name>
 ```
 
-###### Add remote repository
+###### Add a remote
 ```
 git remote add <remote-name> <github-link>
 git remote add myRepo http://github.com/somerepo.git
 ```
 
-###### Show remote links
+###### Remove a remote
+```
+git remote remove <remote-name>
+```
+
+###### Set up a branch to track a remote branch
+```
+git chekcout <branch-name>
+git branch -u <remote-name>/<branch-name>
+```
+
+###### Show remote URLs
 ```
 git remote -v
+```
+
+###### Set remote URLs
+```
+git remote set-url <remote-name> <URL>
 ```
 
 ###### Clear local pointers to non-existing remote branches
@@ -244,6 +272,19 @@ git remote -v
 git remote prune <remote-name>
 ```
 
+###### Add & push to multiple remotes
+```
+git remote add <remote-name> <primary-repo-URL>
+git remote set-url --add --push <remote-name> <primary-repo-URL>          # Re-register remote as a push URL
+git remote set-url --add --push <remote-name> <secondary-repo-URL>        # Add another push URL to this remote
+```
+
+###### Fetch from multiple remotes (not git pull, since you cannot merge many remotes into one)
+```
+git fetch --all                                       # fetch from multiple remotes
+git checkout <branch-name>                            # checkout to the branch you want to work with
+git reset --hard <remote-name>/<branch-name>          # switch remotes to access the work done on each one & further work
+```
 ### Stash changes
 
 ###### Stash unstaged stuff somewhere and come back later
