@@ -336,13 +336,19 @@ git stash drop
 
 </details>
 
-### Redo commits
+### Undo commits
 <details>
 <summary>Details</summary>
   
 ###### Undo all commits after [commit], preserving changes locally
 ```
 git reset <commit-hash>
+```
+
+###### Revert commit
+```
+git revert <commit-hash>
+git checkout <current-branch>          # To fix detached head
 ```
 
 ###### Discard all history and changes back to the specified commit
@@ -399,12 +405,6 @@ git diff [first-branch]...[second-branch]
 ###### Output metadata and content changes of the specified commit
 ```
 git show [commit-hash]
-```
-
-###### Undo commit
-```
-git revert <commit-hash>
-git checkout <current-branch>          # To fix detached head
 ```
 
 ###### Test / work with previous commit 
