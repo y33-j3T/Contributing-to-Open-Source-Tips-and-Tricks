@@ -243,7 +243,7 @@ git pull <remote-name>
 ###### Add a remote
 ```
 git remote add <remote-name> <github-link>
-git remote add myRepo http://github.com/somerepo.git
+# git remote add myRepo http://github.com/somerepo.git
 ```
 
 ###### Remove a remote
@@ -349,6 +349,7 @@ Browse and inspect the evolution of project files
 ###### List version history for the current branch
 ```
 git log
+git log --oneline          # simplified output
 ```
 
 ###### List version history for a file, including renames
@@ -363,7 +364,18 @@ git diff [first-branch]...[second-branch]
 
 ###### Output metadata and content changes of the specified commit
 ```
-git show [commit]
+git show [commit-hash]
+```
+
+###### Undo commit
+```
+git revert <commit-hash>
+git checkout <current-branch>          # To fix detached head
+```
+
+###### Test / work with previous commit 
+```
+git checkout <commit-hash>
 ```
 
 ## Git FAQ
