@@ -47,7 +47,7 @@ git init <repository-name>
 
 ###### Download a project and its entire version history
 ```
-git clone [url]
+git clone <url>
 ```
 
 ###### Change into directory of specified repository
@@ -103,7 +103,7 @@ git commit -m <descriptive-message>
 
 ###### Unstage the file, but preserve its contents
 ```
-git reset [filename]
+git reset <filename>
 ```
 
 ###### Provide the path for the repository you created on github
@@ -205,8 +205,8 @@ git branch -vv (shows upstream branch)
 
 ###### Delete remote branch
 ```
-git push [remote-name] :[remote-branch-name]
-git push [remote-name] --delete [remote-branch-name]
+git push <remote-name> :<remote-branch-name>
+git push <remote-name> --delete <remote-branch-name>
 ```
 
 ###### Delete local branch
@@ -281,7 +281,7 @@ git remote -v
 
 ###### Set remote URLs
 ```
-git remote set-url <remote-name> <URL>
+git remote set-url <remote-name> <url>
 ```
 
 ###### Clear local pointers to non-existing remote branches
@@ -291,9 +291,9 @@ git remote prune <remote-name>
 
 ###### Add & push to multiple remotes
 ```
-git remote add <remote-name> <primary-repo-URL>
-git remote set-url --add --push <remote-name> <primary-repo-URL>          # Re-register remote as a push URL
-git remote set-url --add --push <remote-name> <secondary-repo-URL>        # Add another push URL to this remote
+git remote add <remote-name> <primary-repo-url>
+git remote set-url --add --push <remote-name> <primary-repo-url>          # Re-register remote as a push URL
+git remote set-url --add --push <remote-name> <secondary-repo-url>        # Add another push URL to this remote
 ```
 
 ###### Fetch from multiple remotes (not git pull, since you cannot merge many remotes into one)
@@ -394,17 +394,17 @@ git log --oneline          # simplified output
 
 ###### List version history for a file, including renames
 ```
-git log --follow [file]
+git log --follow <file>
 ```
 
 ###### Show content differences between two branches
 ```
-git diff [first-branch]...[second-branch]
+git diff <first-branch>...<second-branch>
 ```
 
 ###### Output metadata and content changes of the specified commit
 ```
-git show [commit-hash]
+git show <commit-hash>
 ```
 
 ###### Test / work with previous commit 
