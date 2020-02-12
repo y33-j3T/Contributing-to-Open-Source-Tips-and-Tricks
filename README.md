@@ -364,7 +364,7 @@ git reset --hard <commit-hash>
   
 ###### Delete the file from the working directory and stages the deletion
 ```
-git rm [file]
+git rm <filename>
 ```
 
 ###### Stop tracking a file that is currently tracked
@@ -376,7 +376,7 @@ git rm -r --cached <folder>    # if you want to remove a whole folder, you need 
 
 ###### Change the file name and prepare it for commit
 ```
-git mv [file-original] [file-renamed]
+git mv <filename-original> <file-renamed>
 ```
 
 </details>
