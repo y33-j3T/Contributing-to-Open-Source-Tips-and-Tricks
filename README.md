@@ -2,11 +2,12 @@
 
 ## Contents
 - [Introduction](#Introduction)
-- [Git](#Git)
-- [Git FAQ](#Git-FAQ)
-- [Writing READMEs](#Writing-READMEs)
-- [Writing CONTRIBUTEs](#Writing-CONTRIBUTEs)
-- [Choosing a License](#Choosing-a-license)
+- [Content](#Git)
+  - [Git](#Git)
+  - [Git FAQ](#Git-FAQ)
+  - [Writing READMEs](#Writing-READMEs)
+  - [Writing CONTRIBUTEs](#Writing-CONTRIBUTEs)
+  - [Choosing a License](#Choosing-a-license)
 - [Contributing](#Contributing)
 - [License](#License)
 
