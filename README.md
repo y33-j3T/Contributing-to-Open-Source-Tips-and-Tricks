@@ -415,8 +415,8 @@ git checkout <commit-hash>
 </details>
 
 ## Git FAQ
-:pushpin: How to make Git “forget” about a file that was tracked but is now in .gitignore? \ 
-[Stop tracking a file that is currently tracked](#Refactor-files)
+- How to make Git “forget” about a file that was tracked but is now in .gitignore? \ 
+:pushpin: See: [Stop tracking a file that is currently tracked](#Refactor-files)
 
 ## Writing READMEs
 - List of well written READMEs [[see]](https://github.com/matiassingers/awesome-readme)
