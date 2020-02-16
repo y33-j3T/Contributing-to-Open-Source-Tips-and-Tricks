@@ -13,7 +13,7 @@
 ## Introduction
 As I learn my way up to being a proficient contributor to open source, I have kept some of these cheatsheets/resources around to refer in times of need. This list cover mostly the basics and would suffice foundational day-to-day work. I hope you find it useful. Feel free to contribute via issues or pull requests. :heart_eyes:
 
-## Git
+## :man_technologist: Git
 
 ### Setup
 <details>
@@ -414,10 +414,10 @@ git checkout <commit-hash>
 
 </details>
 
-## Git FAQ
+## :question: Git FAQ
 - How to make Git “forget” about a file that was tracked but is now in .gitignore? [Stop tracking a file that is currently tracked :mag_right:](#Refactor-files) 
 
-## Writing READMEs
+## :page_with_curl: Writing READMEs
 - List of well written READMEs [[see]](https://github.com/matiassingers/awesome-readme)
 - GitHub Emojis [[see]](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
 - Template to make a good README [[see]](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
@@ -425,9 +425,9 @@ git checkout <commit-hash>
 - Octodex [[see]](https://octodex.github.com/)
 - LaTeX mathematical symbol embedding [[see]](https://www.codecogs.com/latex/eqneditor.php)
 
-## Writing CONTRIBUTEs
+## :love_letter: Writing CONTRIBUTEs
 
-## Choosing a License
+## :detective: Choosing a License
 - Explain a license in plain english [[see]](https://tldrlegal.com/)
 - Full guide to choosing a license [[see]](https://choosealicense.com/)
 - Further license references for open source [[see]](https://opensource.org/licenses)
@@ -437,7 +437,7 @@ git checkout <commit-hash>
   3. Do I want derivatives, additions and distributions to use the same licenses?
   4. Can others use my software in their own proprietary software?
 
-## Documenting Issues
+## :bookmark_tabs: Documenting Issues
 - Initiator (who logged the call)
 - Initiator Extension or Phone 
 - Date/Time Opened
@@ -454,5 +454,5 @@ git checkout <commit-hash>
 ## Contributing
 - Please refer to [CONTRIBUTE.md](./CONTRIBUTE.md) for details. :heart_eyes:
 
-## License
+## License 
 Contributing to Open Source: Tips & Tricks is released under the [MIT license](./LICENSE).
