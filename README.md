@@ -368,7 +368,7 @@ git rm <filename>
 ```
 
 ###### Stop tracking a file that is currently tracked
-[1]:#Stop-tracking-a-file-that-is-currently-tracked
+
 ```
 git rm --cached <filename>
 git rm -r --cached <folder>    # if you want to remove a whole folder, you need to remove all files in it recursively
@@ -415,7 +415,7 @@ git checkout <commit-hash>
 </details>
 
 ## Git FAQ
-- [How to make Git “forget” about a file that was tracked but is now in .gitignore?][1]
+- [How to make Git “forget” about a file that was tracked but is now in .gitignore?](#Stop-tracking-a-file-that-is-currently-tracked)
 
 ## Writing READMEs
 - List of well written READMEs [[see]](https://github.com/matiassingers/awesome-readme)
