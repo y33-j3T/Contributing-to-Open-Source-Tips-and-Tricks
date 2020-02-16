@@ -2,13 +2,13 @@
 
 ## Contents
 - [Introduction](#Introduction)
-- [Content](#:man_technologist:-Git)
-  - [Git](#:man_technologist:-Git)
-  - [Git FAQ](#:question:-Git-FAQ)
-  - [Writing READMEs](#:page_with_curl:-Writing-READMEs)
-  - [Writing CONTRIBUTEs](#:love_letter:-Writing-CONTRIBUTEs)
-  - [Choosing a License](#:detective:-Choosing-a-license)
-  - [Documenting Issues](#:bookmark_tabs:-Documenting-Issues)
+- [Content](#man_technologist-Git)
+  - [Git](#man_technologist-Git)
+  - [Git FAQ](#question-Git-FAQ)
+  - [Writing READMEs](#page_with_curl-Writing-READMEs)
+  - [Writing CONTRIBUTEs](#love_letter-Writing-CONTRIBUTEs)
+  - [Choosing a License](#detective-Choosing-a-license)
+  - [Documenting Issues](#bookmark_tabs-Documenting-Issues)
 - [Contributing](#Contributing)
 - [License](#License)
 
