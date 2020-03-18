@@ -428,6 +428,7 @@ git checkout <commit-hash>
 - LaTeX mathematical symbol embedding [[see]](https://www.codecogs.com/latex/eqneditor.php)
 
 ## :love_letter: Writing CONTRIBUTEs
+-
 
 ## :detective: Choosing a License
 - Explain a license in plain english [[see]](https://tldrlegal.com/)
