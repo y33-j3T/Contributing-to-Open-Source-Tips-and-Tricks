@@ -122,7 +122,7 @@ git annotate <filename>                     # of file since first commit
 git diff <commit-hash-1>..<commit-hash-2>   # of file between 2 commits
 git diff HEAD~<num-1>..HEAD~<num-2>
 ```
-####### Restore previous version
+###### Restore previous version
 ```
 git checkout <commit-hash> <filename>  # of file
 ```
