@@ -36,11 +36,11 @@ git config --global http.proxy <proxy-address>    # set proxy to connect w/ remo
 ###### Create a new directory, and initialize it with git-specific functions
 ```
 git init <repository-name>
-# git init my-repo
 ```
-###### Download a project and its entire version history
+###### Clone a project and its entire version history
 ```
-git clone <url>
+git clone <url>                                       # from remote
+git clone <existing-project-path> <new-project-path>  # locally
 ```
 ###### Change into directory of specified repository
 ```
@@ -97,7 +97,7 @@ git clean -f  # delete untracked files
 ```
 git reset <filename>        # to file
 git reset HEAD              # to all files
-git reset  					        # to HEAD by default
+git reset                   # to HEAD by default
 ```
 ###### Delete unstaged changes
 ```
@@ -180,24 +180,24 @@ git branch
 ```
 ###### Create new local branch
 ```
-git branch <local-branch-name>          # create a local branch
-git checkout -b <local-branch-name>     # create a local branch and checkout to that branch
-```
-###### Create new local branch from remote branch
-```
-git branch <local-branch-name> <remote-name>/<remote-branch-name>
-git checkout -b <local-branch-name> <remote-name>/<remote-branch-name>    # this allows you to set local-branch-name on your own
-git checkout --track <remote-name>/<remote-branch-name>                   # this sets the local-branch-name as remote-branch-name
+git branch <local-branch-name>         
+git checkout -b <local-branch-name>                                     # then go to that branch
+git branch <local-branch-name> <remote-name>/<remote-branch-name>       # from remote branch
+git checkout -b <local-branch-name> <remote-name>/<remote-branch-name>  # this allows you to set local-branch-name on your own
+git checkout --track <remote-name>/<remote-branch-name>                 # this sets the local-branch-name as remote-branch-name
 ```
 ###### Go to branch
 ```
 git checkout <local-branch-name>
-# git checkout master          # go to master branch
 ```
-###### Merge branches to source branch 
+###### Show difference between branches
 ```
-git merge <branch-name>                # merge specified branch to current branch
-# git merge some-other-branch master   # merge some-other-branch to master 
+git diff <branch-1>..<branch-2>
+```
+###### Merge particular branch 
+```
+git merge <branch-name>                      # to current branch
+# git merge <branch-name> <another-branch>   # to particular branch
 ```
 ###### Use -a to skip staging step while commit, but untracked files must use 'git add'
 ```
@@ -218,9 +218,9 @@ git branch --set-upstream-to <remote-name>/<remote-branch-name>
 ```
 ###### See branch (increasing verbosity)
 ```
-git branch (view local branch name only)
-git branch -v (shows latest commit)
-git branch -vv (shows upstream branch)
+git branch      # view local branch name only
+git branch -v   # shows latest commit
+git branch -vv  # shows upstream branch
 ```
 ###### Delete remote branch
 ```
@@ -276,9 +276,10 @@ git clone <clone-url>
 git fetch <remote-name>
 git fetch --all
 ```
-###### Fetch and merge the changes from the remote branch into current branch
+###### Fetch and merge the changes from the remote branch
 ```
-git pull <remote-name>
+git pull <remote-name>               # into current branch
+git pull <remote-name> <local-name>  # into particular branch
 ```
 ###### Add a remote
 ```
@@ -287,7 +288,7 @@ git remote add <remote-name> <github-link>
 ```
 ###### Remove a remote
 ```
-git remote remove <remote-name>
+git remote rm <remote-name>
 ```
 ###### Set up a branch to track a remote branch
 ```
@@ -354,7 +355,7 @@ git stash drop
 <details>
 <summary>Details</summary>
   
-###### Delete the file from the working directory and stages the deletion
+###### Delete file from working directory and stage deletion
 ```
 git rm <filename>
 ```
