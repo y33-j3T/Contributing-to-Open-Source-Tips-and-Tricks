@@ -404,7 +404,7 @@ git checkout <commit-hash>
 
 
 ## :question: Git FAQ
-- How to make Git “forget” about a file that was tracked but is now in .gitignore? [Stop tracking a file that is currently tracked :mag_right:](#Refactor-files)
+- How to make Git “forget” about a file that was tracked but is now in .gitignore? [Stop tracking a file that is currently tracked](#refactor-file-tracking)
 - Git LFS: Encountered X file(s) that should have been pointers, but weren't. ([reference](https://www.reddit.com/r/Unity3D/comments/o4jh6d/git_lfs_encountered_x_files_that_should_have_been/))
 
 
