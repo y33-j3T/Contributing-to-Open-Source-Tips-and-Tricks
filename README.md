@@ -114,7 +114,7 @@ git checkout -- <filename>  # to file
 ###### Take a snapshot of the staging area
 ```
 git commit -m "<descriptive-message>"
-git commit --ammend -m "<new-message>"  # ammend commit message
+git commit --amend -m "<new-message>"  # ammend commit message
 ```
 ###### Show changes
 ```
